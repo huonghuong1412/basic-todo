@@ -1,0 +1,103 @@
+blockquote,body,dd,dl,dt,fieldset,figure,h1,h2,h3,h4,h5,h6,hr,html,iframe,legend,li,ol,p,pre,textarea,ul{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}ul{list-style:none}button,input,select,textarea{margin:0}textarea{resize:none!important}html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}a{text-decoration:none!important;transition:all .3s ease-in-out}a:hover{text-decoration:none}
+
+
+header, footer {
+  height: 100px;
+  background-color: rgb(245, 66, 66);
+  color: #fff;
+}
+
+header h1, 
+footer h1 {
+  line-height: 100px;
+  font-size: 32px;
+  text-align: center;
+}
+
+input:focus,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.main {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.form-group {
+  padding: 0 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.todo-task {
+  display: block;
+  padding: 8px 20px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-task .icon {
+  padding-right: 10px;
+}
+
+.todo-item:hover {
+  background-color: #f3f3f5;
+  transition: all 0.3s ease;
+}
+
+.todo-icon {
+  margin-right: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.checked {
+  background-color: #f3f3f5;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  background: #f0f0f0;
+  position: relative;
+  width: 33.33%;
+  text-align: center;
+  border-top: 0;
+}
+
+.nav-tabs .nav-link.active::after {
+  position: absolute;
+  content: "\2705";
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  box-shadow: inset 0 3px #0CE;
+}
